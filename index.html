@@ -23,8 +23,16 @@
                 ></a-asset-item>
             </a-assets>
 
+            <a-entity
+                    look-at="[gps-camera]"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#animated-asset"
+                    scale="0.1 0.1 0.1"
+                    gps-entity-place="latitude: 40.099471348024785; longitude: -74.22689555996305; positon=0,0,0;"
+                ></a-entity>
+
                 
-<a-box gps-projected-entity-place='latitude: 40.099471348024785; longitude: -74.22689555996305 material='color: red' scale='10 10 10'></a-box>
+
             <a-camera id='camera1' look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera='gpsMinDistance: 5' rotation-reader> </a-camera>
         </a-scene>
     </body>
